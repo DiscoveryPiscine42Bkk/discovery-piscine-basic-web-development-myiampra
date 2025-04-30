@@ -6,7 +6,8 @@ else
 	count=0
  	for arg in "$@"
 do
-	echo "$arg"
+	echo -n  "$arg"
+	echo
 	count=$((count + 1))
 	if [ $count -eq 3 ]; then
 		break
